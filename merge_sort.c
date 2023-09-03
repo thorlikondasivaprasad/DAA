@@ -15,7 +15,6 @@ void merge(int arr[], int l, int m, int r)
 		L[i] = arr[l + i];
 	for (j = 0; j < n2; j++)
 		R[j] = arr[m + 1 + j];
-
 	// Merge the temp arrays back into arr[l..r
 	i = 0;
 	j = 0;
@@ -31,7 +30,6 @@ void merge(int arr[], int l, int m, int r)
 		}
 		k++;
 	}
-
 	// Copy the remaining elements of L[],
 	// if there are any
 	while (i < n1) {
@@ -39,7 +37,6 @@ void merge(int arr[], int l, int m, int r)
 		i++;
 		k++;
 	}
-
 	// Copy the remaining elements of R[],
 	// if there are any
 	while (j < n2) {
@@ -48,7 +45,6 @@ void merge(int arr[], int l, int m, int r)
 		k++;
 	}
 }
-
 // l is for left index and r is right index of the
 // sub-array of arr to be sorted
 void mergeSort(int arr[], int l, int r)
@@ -63,7 +59,6 @@ void mergeSort(int arr[], int l, int r)
 		merge(arr, l, m, r);
 	}
 }
-
 // Function to print an array
 void printArray(int A[], int size)
 {
@@ -73,7 +68,6 @@ void printArray(int A[], int size)
 	printf("\n");
 }
 
-// Driver code
 int main()
 {
     int n;
