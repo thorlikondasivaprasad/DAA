@@ -20,7 +20,7 @@ int min_key(int k[],int mst[])  /* k[] is selecting edge having min weight */
 void prim(int g[verti][verti])
 {
     int parent[verti],k[verti],mst[verti];  /* parent[0]=-1 ,i.e,parent[0] is rootnode*/
-    int i ,count,edge,v;
+    int i ,count,edge,v,sum=0;
     
     for(i=0;i<verti;i++)
     {
@@ -51,6 +51,12 @@ void prim(int g[verti][verti])
     {
         printf("%d --- %d  %d\n",parent[i],i,g[i][parent[i]]);
     }
+    for (i=1;i<verti;i++)     /* The minimum cost is printed */
+    {
+        sum+=g[i][parent[i]];
+    }
+    printf("\n The Minimum cost is : %d",sum);
+
 }
 
 int main()
