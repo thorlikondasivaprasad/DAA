@@ -23,14 +23,23 @@ int coinchange(int ind,int tgt,int coins[] ){
 }
 int main(){
 	int n,tgt,res;
-	printf("\n Enter no.of different denominations");
+	printf("\n Enter no.of different denominations:");
 	scanf("%d",&n);
 	int coins[10];
 	for(int i=0;i<n;i++){
 		scanf("%d",&coins[i]);
 	}
-	printf("\n Enter the target");
+	printf("\n Enter the target:");
 	scanf("%d",&tgt);
 	res=coinchange(n-1,tgt,coins);
-	printf("%d ",res);
+	printf("%d is solution..",res);
 }
+
+
+
+Output:
+
+Enter no.of different denominations:4
+1 5 6 9
+Enter the target:11
+2 is solution 
