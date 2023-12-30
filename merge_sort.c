@@ -31,13 +31,13 @@ void merge(int a[],int l,int mid,int r)
         }
         k++;
     }
-    while(i<n1)
+    while(i<n1) //remaining elements of L
     {
         a[k]=L[i];
         i++;
         k++;
     }
-    while(j<n2)
+    while(j<n2) //remaining elements of R
     {
         a[k]=R[j];
         j++;
