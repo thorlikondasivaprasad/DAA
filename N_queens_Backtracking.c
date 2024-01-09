@@ -24,7 +24,6 @@ int minCoins(int coins[], int n, int sum)
             }
         }
     }
-
     printf("Coins used: ");
     for (int i = 0; i < n; i++) {
         printf("%d ", usedCoins[sum][i]);
