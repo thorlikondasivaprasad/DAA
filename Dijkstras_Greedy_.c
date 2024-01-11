@@ -39,7 +39,6 @@ int main()
   memset(dist, inf, n * sizeof(int));
 
   dist[0]=0;
-  visited[0]=1;
 
   while(edges < n-1)
     {
